@@ -1,0 +1,14 @@
+stages:
+  preprocess:
+    cmd : python src/preprocess.py
+    deps :
+      - data/diabetes.csv
+    outs :
+      - data/processed/diabetes.csv
+
+  train:
+    cmd : python src/train.py
+    deps :
+      - data/processed/diabetes.csv
+    outs : 
+      - models/svc_model.pkl
