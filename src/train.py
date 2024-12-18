@@ -57,6 +57,7 @@ def train():
     accuracy  = accuracy_score(y_test, y_pred_svm)
     print("SVM:\n", classification_report(y_test, y_pred_svm))
     print(f'Accuracy : {accuracy}')
+    print('Update')
     
     mlflow.set_experiment('diabetes_svc')
     with mlflow.start_run():
