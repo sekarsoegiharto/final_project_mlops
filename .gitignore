@@ -1,2 +1,5 @@
 .venv
 mlruns
+data/diabetes.csv
+data/processed/diabetes.csv
+models/svc_model.pkl

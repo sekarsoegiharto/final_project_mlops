@@ -12,3 +12,15 @@ stages:
       hash: md5
       md5: 8bd15e858851dcfbc77c6e8d83edf5db
       size: 111086
+  train:
+    cmd: python src/train.py
+    deps:
+    - path: data/diabetes.csv
+      hash: md5
+      md5: f2906818eda8fcfc8f8416557ab1e6df
+      size: 23873
+    outs:
+    - path: models/svc_model.pkl
+      hash: md5
+      md5: dc1328b364555cdbb116a245722da1a4
+      size: 35339

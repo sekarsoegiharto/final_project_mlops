@@ -9,6 +9,6 @@ stages:
   train:
     cmd : python src/train.py
     deps :
-      - data/processed/diabetes.csv
+      - data/diabetes.csv
     outs : 
       - models/svc_model.pkl
