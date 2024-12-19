@@ -60,7 +60,7 @@ jobs:
         run: python src/train.py
 
   docker:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     needs: train
     steps:
       - name: Checkout repository
