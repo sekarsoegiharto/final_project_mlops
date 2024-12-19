@@ -16,10 +16,6 @@ jobs:
         name: Checkout
         uses: actions/checkout@v3
 
-      - name: Restore BuildKit state
-        uses: moby/buildkit
-        with:
-          buildx-name: ${{ steps.buildx.outputs.name }}
       -
         # Add support for more platforms with QEMU (optional)
         # https://github.com/docker/setup-qemu-action
