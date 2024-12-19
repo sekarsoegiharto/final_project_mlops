@@ -1,0 +1,14 @@
+schema: '2.0'
+stages:
+  preprocess:
+    cmd: python src/preprocess.py
+    deps:
+    - path: data/diabetes.csv
+      hash: md5
+      md5: f2906818eda8fcfc8f8416557ab1e6df
+      size: 23873
+    outs:
+    - path: data/processed/diabetes.csv
+      hash: md5
+      md5: 8bd15e858851dcfbc77c6e8d83edf5db
+      size: 111086
