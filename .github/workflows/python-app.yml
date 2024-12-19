@@ -32,7 +32,7 @@ jobs:
 
   train:
     runs-on: windows-latest
-    # needs: dvc
+    needs: dvc
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
