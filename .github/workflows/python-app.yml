@@ -43,7 +43,7 @@ jobs:
   #          dvc pull --force && git commit -am "Update data" && git push 
 
   train:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
   # needs: dvc
     steps:
       - name: Checkout repository
@@ -61,7 +61,7 @@ jobs:
         run: python src/train.py
 
   docker:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     needs: 
       - train
     steps:
