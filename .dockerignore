@@ -1,0 +1,9 @@
+.dvc/
+.github/
+buildx/
+.venv/
+mlruns/
+.dvcignore
+.gitgnore
+dvc.lock
+dvc.yaml
