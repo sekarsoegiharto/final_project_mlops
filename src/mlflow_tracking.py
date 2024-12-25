@@ -1,2 +1,2 @@
 import os
-os.system('mlflow ui --host 0.0.0.0 --port 5000')
+os.system('mlflow ui --host localhost --port 5000')
